@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * 本棚を表すクラス
+ * 本棚を表すクラス（集合体）
  */
 public class BookShelf implements Iterable<Book> {
 

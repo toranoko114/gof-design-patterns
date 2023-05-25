@@ -9,7 +9,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [ ] Strategy:第10章
 - [ ] State:第19章
 - [ ] Command:第22章
-- [ ] Iterator:第1章
+- [X] Iterator:第1章
 - [ ] Proxy:第21章
 - [ ] Template-Method:第3章
 - [ ] Facade:第15章

@@ -3,6 +3,9 @@ package com.gof.design.patterns.core.Iterator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+/**
+ * 本棚をスキャンする役割（反復子）
+ */
 public class BookShelfIterator implements Iterator<Book> {
 
   private final BookShelf bookShelf;
