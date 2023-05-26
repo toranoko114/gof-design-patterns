@@ -30,5 +30,11 @@ public class Main {
     showy.add(new File("showy_v1", 3000));
 
     rootDir.printList();
+
+    System.out.println();
+    var showy_v2 = new File("showy_v2", 3000);
+    showy.add(showy_v2);
+    System.out.println(showy_v2.getFullName());
+
   }
 }
