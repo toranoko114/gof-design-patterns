@@ -13,7 +13,7 @@ public class Main {
     int seed1 = Integer.parseInt(args[0]);
     int seed2 = Integer.parseInt(args[1]);
     Player player1 = new Player("Mike", new WinningStrategy(seed1));
-    Player player2 = new Player("Showy", new ProbStrategy(seed2));
+    Player player2 = new Player("Showy", new RandomStrategy(seed2));
 
     IntStream.range(0, 100).forEach(
         i -> {

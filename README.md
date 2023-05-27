@@ -5,8 +5,8 @@ https://www.informit.com/articles/article.aspx?p=1404056
 Java言語で学ぶデザインパターン入門（第3版）とのマッピングをする.
 
 ## 中核(Core)
-- [ ] Composite:第11章
-- [ ] Strategy:第10章
+- [X] Composite:第11章
+- [X] Strategy:第10章
 - [ ] State:第19章
 - [ ] Command:第22章
 - [X] Iterator:第1章
