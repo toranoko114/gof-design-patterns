@@ -2,15 +2,18 @@ package com.gof.design.patterns.core.TemplateMethod;
 
 import java.util.stream.IntStream;
 
-public abstract class AbstractDisplay {
+public interface AbstractDisplay {
 
-  abstract void open();
+  void open();
 
-  abstract void print();
+  void print();
 
-  abstract void close();
+  void close();
 
-  public void display() {
+  /**
+   * テンプレートメソッドはオーバーライドすべきではないという思想からfinal宣言している。
+   */
+  default void display() {
     open();
     IntStream.range(0, 5).forEach(i -> print());
     close();
