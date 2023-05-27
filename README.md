@@ -15,7 +15,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [ ] Facade:第15章
 
 ## 生成(Creational）
-- [ ] Factory:第4章
+- [X] Factory:第4章
 - [ ] Prototype:第6章
 - [ ] Builder:第7章
 - [X] Dependency-Injection:なし
