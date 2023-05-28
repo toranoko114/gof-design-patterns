@@ -1,6 +1,7 @@
 package com.gof.design.patterns.creational.Prototype;
 
 import com.gof.design.patterns.creational.Prototype.framework.ConcreteProduct;
+import com.gof.design.patterns.creational.Prototype.framework.Product;
 
 public class MessageBox extends ConcreteProduct {
 
@@ -8,6 +9,11 @@ public class MessageBox extends ConcreteProduct {
 
   public MessageBox(char decoChar) {
     this.decoChar = decoChar;
+  }
+
+  // コピーコンストラクタ
+  public MessageBox(MessageBox prototype) {
+    this.decoChar = prototype.decoChar;
   }
 
   @Override
@@ -18,5 +24,10 @@ public class MessageBox extends ConcreteProduct {
     System.out.println(decoChar + s + decoChar);
     super.decorate(decoChar, decoLen);
     System.out.println();
+  }
+
+  @Override
+  public Product createCopy() {
+    return new MessageBox(this);
   }
 }

@@ -16,7 +16,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 
 ## 生成(Creational）
 - [X] Factory:第4章
-- [ ] Prototype:第6章
+- [X] Prototype:第6章
 - [ ] Builder:第7章
 - [X] Dependency-Injection:なし
 

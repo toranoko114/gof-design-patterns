@@ -1,6 +1,6 @@
 package com.gof.design.patterns.creational.Prototype.framework;
 
-public interface Product extends Cloneable {
+public interface Product {
 
   void use(String s);
 
