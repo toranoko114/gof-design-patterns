@@ -2,12 +2,12 @@ package com.gof.design.patterns.creational.Builder;
 
 import java.util.Arrays;
 
-public class TextBuilder extends Builder {
+public class TextBuilder implements Builder {
 
   private final StringBuilder sb = new StringBuilder();
 
   @Override
-  void makeTitle(String title) {
+  public void makeTitle(String title) {
     sb.append("==========================\n");
     sb.append("『");
     sb.append(title);
@@ -15,14 +15,14 @@ public class TextBuilder extends Builder {
   }
 
   @Override
-  void makeString(String str) {
+  public void makeString(String str) {
     sb.append("■");
     sb.append(str);
     sb.append("』\n\n");
   }
 
   @Override
-  void makeItems(String[] items) {
+  public void makeItems(String[] items) {
     Arrays.stream(items).forEach(
         str -> {
           sb.append("　・");
@@ -34,7 +34,7 @@ public class TextBuilder extends Builder {
   }
 
   @Override
-  void close() {
+  public void close() {
     sb.append("==========================\n");
   }
 

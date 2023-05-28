@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Arrays;
 
-public class HTMLBuilder extends Builder {
+public class HTMLBuilder implements Builder {
 
   private String fileName = "untitled.html";
   private final StringBuilder sb = new StringBuilder();
 
   @Override
-  void makeTitle(String title) {
+  public void makeTitle(String title) {
     fileName = title + ".html";
     sb.append("<!DOCTYPE html>\n");
     sb.append("<html>\n");
@@ -25,14 +25,14 @@ public class HTMLBuilder extends Builder {
   }
 
   @Override
-  void makeString(String str) {
+  public void makeString(String str) {
     sb.append("<p>");
     sb.append(str);
     sb.append("</p>\n\n");
   }
 
   @Override
-  void makeItems(String[] items) {
+  public void makeItems(String[] items) {
     sb.append("<ul>\n");
     Arrays.stream(items).forEach(
         str -> {
@@ -45,7 +45,7 @@ public class HTMLBuilder extends Builder {
   }
 
   @Override
-  void close() {
+  public void close() {
     sb.append("</body>");
     sb.append("</html>\n");
     try {

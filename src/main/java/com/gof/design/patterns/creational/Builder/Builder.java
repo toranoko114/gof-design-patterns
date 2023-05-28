@@ -1,14 +1,14 @@
 package com.gof.design.patterns.creational.Builder;
 
-public abstract class Builder {
+public interface Builder {
 
-  abstract void makeTitle(String title);
+  void makeTitle(String title);
 
-  abstract void makeString(String str);
+  void makeString(String str);
 
-  abstract void makeItems(String[] items);
+  void makeItems(String[] items);
 
-  abstract void close();
+  void close();
 
 
 }
