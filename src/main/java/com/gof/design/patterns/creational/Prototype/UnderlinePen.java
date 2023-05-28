@@ -1,9 +1,8 @@
 package com.gof.design.patterns.creational.Prototype;
 
-import com.gof.design.patterns.creational.Prototype.framework.Product;
-import java.util.stream.IntStream;
+import com.gof.design.patterns.creational.Prototype.framework.ConcreteProduct;
 
-public class UnderlinePen implements Product {
+public class UnderlinePen extends ConcreteProduct {
 
   private final char ulChar;
 
@@ -14,25 +13,7 @@ public class UnderlinePen implements Product {
   @Override
   public void use(String s) {
     System.out.println(s);
-    decorate(s);
+    super.decorate(ulChar, s.length());
     System.out.println();
-  }
-
-  private void decorate(String s) {
-    int uLen = s.length();
-    IntStream.range(0, uLen).forEach(
-        i -> System.out.print(ulChar)
-    );
-  }
-
-  @Override
-  public Product createCopy() {
-    Product p = null;
-    try {
-      p = (Product) this.clone();
-    } catch (CloneNotSupportedException e) {
-      e.printStackTrace();
-    }
-    return p;
   }
 }
