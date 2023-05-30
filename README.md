@@ -12,7 +12,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [X] Iterator:第1章
 - [ ] Proxy:第21章
 - [X] Template-Method:第3章
-- [ ] Facade:第15章
+- [X] Facade:第15章
 
 ## 生成(Creational）
 - [X] Factory:第4章
