@@ -13,21 +13,24 @@ class HtmlWriter {
 
   // タイトル
   public void title(String title) throws IOException {
-    writer.write("<!DOCTYPE html>");
-    writer.write("<html>");
-    writer.write("<head>");
-    writer.write("<title>" + title + "</title>");
-    writer.write("</head>");
-    writer.write("<body>");
-    writer.write("\n");
-    writer.write("<h1>" + title + "</h1>");
-    writer.write("\n");
+    String htmlTitle = """
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>%s</title>
+          </head>
+          <body>
+            <h1>%s</h1>
+        """.formatted(title, title);
+    writer.write(htmlTitle);
   }
 
   // 段落の出力
   public void paragraph(String msg) throws IOException {
-    writer.write("<p>" + msg + "</p>");
-    writer.write("\n");
+    String htmlParagraph = """
+            <p>%s</p>
+        """.formatted(msg);
+    writer.write(htmlParagraph);
   }
 
   // リンクの出力
@@ -42,9 +45,11 @@ class HtmlWriter {
 
   // 閉じる
   public void close() throws IOException {
-    writer.write("</body>");
-    writer.write("</html>");
-    writer.write("\n");
+    String htmlClose = """
+          </body>
+        </html>
+        """;
+    writer.write(htmlClose);
     writer.close();
   }
 }
