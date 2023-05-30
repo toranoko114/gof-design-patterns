@@ -1,4 +1,4 @@
-package com.gof.design.patterns.core.Facade;
+package com.gof.design.patterns.core.Facade.pagemaker;
 
 import java.io.FileWriter;
 import java.io.IOException;

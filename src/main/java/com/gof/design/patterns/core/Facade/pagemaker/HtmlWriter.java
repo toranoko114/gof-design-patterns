@@ -1,9 +1,9 @@
-package com.gof.design.patterns.core.Facade;
+package com.gof.design.patterns.core.Facade.pagemaker;
 
 import java.io.IOException;
 import java.io.Writer;
 
-public class HtmlWriter {
+class HtmlWriter {
 
   private final Writer writer;
 

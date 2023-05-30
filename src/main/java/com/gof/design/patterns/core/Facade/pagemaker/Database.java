@@ -1,10 +1,10 @@
-package com.gof.design.patterns.core.Facade;
+package com.gof.design.patterns.core.Facade.pagemaker;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Database {
+class Database {
 
   private static final String FILE_PATH = "src/main/java/com/gof/design/patterns/core/Facade/";
 
