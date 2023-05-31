@@ -2,19 +2,21 @@ package com.gof.design.patterns.core.Proxy;
 
 import org.springframework.util.ObjectUtils;
 
-public class PrinterProxy implements Printable {
+public class PrinterProxy<E> implements Printable {
 
   private String name;
   private Printer real;
+  private Class<E> clazz;
 
   public PrinterProxy() {
     this.name = "No Name";
     this.real = null;
   }
 
-  public PrinterProxy(String name) {
+  public PrinterProxy(String name, Class<E> clazz) {
     this.name = name;
     this.real = null;
+    this.clazz = clazz;
   }
 
   @Override
@@ -39,7 +41,13 @@ public class PrinterProxy implements Printable {
 
   private synchronized void realize() {
     if (ObjectUtils.isEmpty(real)) {
-      real = new Printer(name);
+      try {
+        real = (Printer) clazz.getDeclaredConstructor().newInstance();
+        real.setPrinterName(name);
+      } catch (Exception e) {
+        System.out.println("エラーです.");
+      }
+
     }
   }
 }
