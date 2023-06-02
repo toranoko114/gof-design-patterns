@@ -7,7 +7,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 ## 中核(Core)
 - [X] Composite:第11章
 - [X] Strategy:第10章
-- [ ] State:第19章
+- [X] State:第19章
 - [ ] Command:第22章
 - [X] Iterator:第1章
 - [X] Proxy:第21章
