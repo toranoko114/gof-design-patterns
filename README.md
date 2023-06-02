@@ -21,7 +21,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [X] Dependency-Injection:なし
 
 ## 周辺(Peripheral)
-- [ ] Abstract Factory:第8章
+- [X] Abstract Factory:第8章
 - [ ] Visitor:第13章
 - [ ] Decorator:第12章
 - [ ] Mediator:第16章
