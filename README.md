@@ -30,7 +30,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [X] Extension-Object:なし
 
 ## その他(Other)
-- [ ] Flyweight:第20章
+- [X] Flyweight:第20章
 - [ ] Interpreter:第23章
 
 ## 削除されている（deleted）
