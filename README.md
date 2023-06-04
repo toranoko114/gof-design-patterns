@@ -24,7 +24,7 @@ Java言語で学ぶデザインパターン入門（第3版）とのマッピン
 - [X] Abstract Factory:第8章
 - [X] Visitor:第13章
 - [X] Decorator:第12章
-- [ ] Mediator:第16章
+- [X] Mediator:第16章
 - [X] Type-Object:なし
 - [X] Null-Object:なし
 - [X] Extension-Object:なし
